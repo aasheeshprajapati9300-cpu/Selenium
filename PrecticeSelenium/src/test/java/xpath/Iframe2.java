@@ -20,8 +20,8 @@ public class Iframe2 {
 		driver.findElement(By.partialLinkText("Iframe with in an Iframe")).click();
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@src=\"MultipleFrames.html\"]")));
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@src=\"SingleFrame.html\"]")));
-		//driver.findElement(By.xpath("(//input[@type=\"text\"])[1]")).sendKeys("Prajapati");
-	
+		driver.findElement(By.xpath("(//input[@type=\"text\"])[1]")).sendKeys("Prajapati");
+		driver.quit();
 	}
 }
 

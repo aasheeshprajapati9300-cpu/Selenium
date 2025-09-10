@@ -16,5 +16,6 @@ public class filpkartTest {
 			driver.get("https://www.flipkart.com/");
 			Thread.sleep(2000);
 			driver.findElement(By.xpath("//div[@data-observerid-7b37be0a-0628-43ad-8de8-f452bf56a6f2=\"276c2ccf-a580-4932-b23a-b5824fc83841\"]")).click();
+			driver.quit();
 		}
 }
