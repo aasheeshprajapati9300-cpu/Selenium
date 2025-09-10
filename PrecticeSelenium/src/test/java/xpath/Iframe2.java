@@ -12,7 +12,7 @@ public class Iframe2 {
 	public void iframeTest() {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://demo.automationtesting.in/Frames.html");
 		driver.switchTo().frame("singleframe");
 		driver.findElement(By.xpath("//input[@type=\"text\"]")).sendKeys("Aashish");
@@ -21,7 +21,9 @@ public class Iframe2 {
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@src=\"MultipleFrames.html\"]")));
 		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@src=\"SingleFrame.html\"]")));
 		driver.findElement(By.xpath("(//input[@type=\"text\"])[1]")).sendKeys("Prajapati");
-		driver.quit();
+		//driver.quit();
+		//add new message
 	}
 }
+
 
